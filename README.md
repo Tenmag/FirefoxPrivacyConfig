@@ -33,10 +33,10 @@ network.predictor.enabled;false
 network.http.speculative-parallel-limit;0
 privacy.donottrackheader.enabled;true
 privacy.firstparty.isolate;true
-general.oscpu.override;Linux
-general.platform.override;Linux64
-general.appversion.override;5.0 (Linux)
-general.buildID.override;20200101000000
+general.oscpu.override;Linux x86_64
+general.platform.override;Linux x86_64
+general.appversion.override;5.0 (X11)
+general.buildID.override;20220101000000
 privacy.sanitize.sanitizeOnShutdown;true
 privacy.sanitize.timeSpan;0
 privacy.clearOnShutdown.offlineApps;true
