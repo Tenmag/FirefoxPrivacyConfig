@@ -161,3 +161,5 @@ other private search engines:
 <https://unbubble.eu>
 
 ---
+
+Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.js) to the Firefox profile folder.
