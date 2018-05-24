@@ -162,4 +162,5 @@ other private search engines:
 
 ---
 
-Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.js) to the Firefox profile folder.
+_Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.js) to the Firefox profile folder._
+
