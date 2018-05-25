@@ -39,6 +39,7 @@ general.oscpu.override;Linux x86_64
 general.platform.override;Linux x86_64
 general.appversion.override;5.0 (X11)
 general.buildID.override;20220101000000
+general.useragent.locale;en-US
 privacy.sanitize.sanitizeOnShutdown;true
 privacy.sanitize.timeSpan;0
 privacy.clearOnShutdown.offlineApps;true
@@ -55,6 +56,7 @@ browser.newtabpage.enhanced;false
 security.tls.version.max;4
 security.tls.unrestricted_rc4_fallback;false
 security.ssl.treat_unsafe_negotiation_as_broken;true
+dom.enable_performance;false
 privacy.resistFingerprinting;true
 dom.mozTCPSocket.enabled;false
 dom.netinfo.enabled;false
@@ -63,7 +65,6 @@ beacon.enabled;false
 browser.send_pings;false
 security.xpconnect.plugin.unrestricted;false
 media.video_stats.enabled;false
-browser.display.use_document_fonts;0
 browser.safebrowsing.downloads.remote.enabled;false
 network.captive-portal-service.enabled;false
 browser.sessionstore.privacy_level;2
@@ -85,8 +86,7 @@ optional:
 ```
 extensions.pocket.enabled;false
 browser.tabs.closeWindowWithLastTab;false
-general.useragent.locale;en-US
-dom.enable_performance;false
+browser.display.use_document_fonts;0
 ```
 
 DNS over HTTPS since Firefox 60:
@@ -165,4 +165,3 @@ other private search engines:
 ---
 
 _Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.js) to the Firefox profile folder to set about:config variables._
-
