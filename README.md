@@ -15,6 +15,8 @@ media.peerconnection.ice.proxy_only;true
 network.cookie.lifetimePolicy;2
 network.cookie.thirdparty.sessionOnly;true
 places.history.enabled;false
+browser.storageManager.enabled;true
+dom.storageManager.enabled;true
 browser.search.suggest.enabled;false
 geo.enabled;false
 camera.control.face_detection.enabled;false
