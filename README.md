@@ -17,6 +17,7 @@ network.cookie.thirdparty.sessionOnly;true
 places.history.enabled;false
 browser.storageManager.enabled;true
 dom.storageManager.enabled;true
+dom.caches.enabled;false
 browser.search.suggest.enabled;false
 geo.enabled;false
 camera.control.face_detection.enabled;false
@@ -49,6 +50,7 @@ privacy.cpd.passwords;true
 privacy.cpd.siteSettings;true
 browser.cache.disk.capacity;0
 browser.cache.disk.smart_size.enabled;false
+browser.cache.disk.enable;false
 signon.rememberSignons;false
 browser.formfill.enable;false
 browser.newtabpage.enabled;false
@@ -58,6 +60,7 @@ security.tls.unrestricted_rc4_fallback;false
 security.ssl.treat_unsafe_negotiation_as_broken;true
 dom.enable_performance;false
 privacy.resistFingerprinting;true
+offline-apps.allow_by_default;false
 dom.mozTCPSocket.enabled;false
 dom.netinfo.enabled;false
 dom.telephony.enabled;false
@@ -81,12 +84,10 @@ security.ssl3.rsa_aes_128_sha;false
 security.ssl3.rsa_des_ede3_sha;false
 ```
 
-optional:
+for Firefox 60:
 
 ```
-extensions.pocket.enabled;false
-browser.tabs.closeWindowWithLastTab;false
-browser.display.use_document_fonts;0
+browser.cache.offline.insecure.enable;false
 ```
 
 DNS over HTTPS since Firefox 60:
@@ -95,6 +96,14 @@ DNS over HTTPS since Firefox 60:
 network.trr.uri;https://cloudflare-dns.com/dns-query
 network.trr.bootstrapAddress;1.1.1.1
 network.trr.mode;2
+```
+
+optional:
+
+```
+extensions.pocket.enabled;false
+browser.tabs.closeWindowWithLastTab;false
+browser.display.use_document_fonts;0
 ```
 
 ---
