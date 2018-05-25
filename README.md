@@ -89,7 +89,7 @@ general.useragent.locale;en-US
 dom.enable_performance;false
 ```
 
-DNS over HTTPS Firefox 60:
+DNS over HTTPS since Firefox 60:
 
 ```
 network.trr.uri;https://cloudflare-dns.com/dns-query
