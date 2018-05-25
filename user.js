@@ -74,7 +74,7 @@ user_pref("security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256",false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha",false);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
-user_pref("security.ssl3.rsa_aes_128_sha",false);
+// user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz shall not work
 user_pref("security.ssl3.rsa_des_ede3_sha",false);
 // for Firefox ESR:
 user_pref("privacy.userContext.enabled",true);
