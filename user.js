@@ -6,6 +6,8 @@ user_pref("media.peerconnection.ice.proxy_only",true);
 user_pref("network.cookie.lifetimePolicy",2);
 user_pref("network.cookie.thirdparty.sessionOnly",true);
 user_pref("places.history.enabled",false);
+user_pref("browser.storageManager.enabled",true);
+user_pref("dom.storageManager.enabled",true);
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
