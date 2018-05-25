@@ -80,8 +80,13 @@ security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256;false
 security.ssl3.ecdhe_ecdsa_aes_128_sha;false
 security.ssl3.ecdhe_rsa_aes_128_gcm_sha256;false
 security.ssl3.ecdhe_rsa_aes_128_sha;false
-security.ssl3.rsa_aes_128_sha;false
 security.ssl3.rsa_des_ede3_sha;false
+```
+
+if next is false, then mega.nz shall not work:
+
+```
+security.ssl3.rsa_aes_128_sha;false
 ```
 
 for Firefox 60:
