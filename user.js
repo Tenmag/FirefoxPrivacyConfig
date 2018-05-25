@@ -8,6 +8,9 @@ user_pref("network.cookie.thirdparty.sessionOnly",true);
 user_pref("places.history.enabled",false);
 user_pref("browser.storageManager.enabled",true);
 user_pref("dom.storageManager.enabled",true);
+user_pref("dom.caches.enabled", false);
+// user_pref("dom.storage.enabled", false); // uBlock and app.standardnotes.org and some sites shall not work
+// user_pref("dom.indexedDB.enabled", false); // uBlock and app.standardnotes.org and some sites shall not work
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
@@ -40,6 +43,7 @@ user_pref("privacy.cpd.passwords",true);
 user_pref("privacy.cpd.siteSettings",true);
 user_pref("browser.cache.disk.capacity",0);
 user_pref("browser.cache.disk.smart_size.enabled",false);
+user_pref("browser.cache.disk.enable",false);
 user_pref("signon.rememberSignons",false);
 user_pref("browser.formfill.enable",false);
 user_pref("browser.newtabpage.enabled",false);
@@ -49,6 +53,8 @@ user_pref("security.tls.unrestricted_rc4_fallback",false);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken",true);
 user_pref("dom.enable_performance",false);
 user_pref("privacy.resistFingerprinting",true);
+
+user_pref("offline-apps.allow_by_default", false);
 user_pref("dom.mozTCPSocket.enabled",false);
 user_pref("dom.netinfo.enabled",false);
 user_pref("dom.telephony.enabled",false);
@@ -70,14 +76,17 @@ user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
 user_pref("security.ssl3.rsa_aes_128_sha",false);
 user_pref("security.ssl3.rsa_des_ede3_sha",false);
+// for Firefox ESR:
 user_pref("privacy.userContext.enabled",true);
 user_pref("privacy.userContext.ui.enabled",true);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
+// for Firefox 60:
 user_pref("network.trr.uri","https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
 user_pref("network.trr.mode",2);
-
+user_pref("browser.cache.offline.insecure.enable", false);
+// optional:
 user_pref("extensions.pocket.enabled",false);
 user_pref("browser.tabs.closeWindowWithLastTab",false);
 user_pref("browser.display.use_document_fonts",0);
