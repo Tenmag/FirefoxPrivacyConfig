@@ -179,3 +179,8 @@ other private search engines:
 ---
 
 _Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.js) to the Firefox profile folder to set about:config variables._
+
+---
+
+[Donate/Támogatás](https://paypal.me/Tenmag)
+
