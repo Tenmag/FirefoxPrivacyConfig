@@ -25,6 +25,8 @@ browser.urlbar.trimURLs;false
 network.proxy.socks_remote_dns;true
 plugin.state.flash;0
 plugin.state.java;0
+network.IDN_show_punycode;true
+network.standard-url.punycode-host;true
 experiments.supported;false
 experiments.enabled;false
 network.allow-experiments;false
