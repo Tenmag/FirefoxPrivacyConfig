@@ -18,8 +18,8 @@ user_pref("browser.urlbar.trimURLs",false);
 user_pref("network.proxy.socks_remote_dns",true);
 user_pref("plugin.state.flash",0);
 user_pref("plugin.state.java",0);
-user_pref("network.IDN_show_punycode",true)
-user_pref("network.standard-url.punycode-host",true)
+user_pref("network.IDN_show_punycode",true);
+user_pref("network.standard-url.punycode-host",true);
 user_pref("experiments.supported",false);
 user_pref("experiments.enabled",false);
 user_pref("network.allow-experiments",false);
