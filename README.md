@@ -61,7 +61,6 @@ security.tls.version.max;4
 security.tls.unrestricted_rc4_fallback;false
 security.ssl.treat_unsafe_negotiation_as_broken;true
 dom.enable_performance;false
-privacy.resistFingerprinting;true
 offline-apps.allow_by_default;false
 dom.mozTCPSocket.enabled;false
 dom.netinfo.enabled;false
@@ -83,6 +82,12 @@ security.ssl3.ecdhe_ecdsa_aes_128_sha;false
 security.ssl3.ecdhe_rsa_aes_128_gcm_sha256;false
 security.ssl3.ecdhe_rsa_aes_128_sha;false
 security.ssl3.rsa_des_ede3_sha;false
+```
+
+if next is true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint:
+
+```
+privacy.resistFingerprinting;true
 ```
 
 if next is false, then mega.nz shall not work:
@@ -144,7 +149,7 @@ for new Firefox Quantum:
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/>  
 for Firefox ESR:  
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/versions/0.1.4>  
-`Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0`
+`Mozilla/5.0 (X11; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0`
 
 <https://addons.mozilla.org/en-US/firefox/addon/dnssec/>
 
@@ -167,14 +172,16 @@ for Firefox ESR:
 ---
 
 Private search engines:  
+<https://peekier.com>  
 <https://searx.me>  
 <https://startpage.com>  
-<https://swisscows.com>  
-<https://duckduckgo.com>  
+<https://ecosia.org>  
 <https://qwant.com>  
-<https://ecosia.org>
+<https://swisscows.com>  
+<https://duckduckgo.com>
 
 other private search engines:  
+<https://www.searchencrypt.com>  
 <https://findx.com>  
 <https://unbubble.eu>
 
