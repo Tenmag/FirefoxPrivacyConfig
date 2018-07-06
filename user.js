@@ -54,7 +54,7 @@ user_pref("security.tls.version.max",4);
 user_pref("security.tls.unrestricted_rc4_fallback",false);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken",true);
 user_pref("dom.enable_performance",false);
-user_pref("privacy.resistFingerprinting",true);
+//user_pref("privacy.resistFingerprinting",true); // if true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint
 
 user_pref("offline-apps.allow_by_default", false);
 user_pref("dom.mozTCPSocket.enabled",false);
@@ -91,5 +91,5 @@ user_pref("browser.cache.offline.insecure.enable", false);
 // optional:
 user_pref("extensions.pocket.enabled",false);
 user_pref("browser.tabs.closeWindowWithLastTab",false);
-user_pref("browser.display.use_document_fonts",0);
-user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0");
+user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
+user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0");
