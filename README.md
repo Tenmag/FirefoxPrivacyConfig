@@ -174,16 +174,17 @@ for Firefox ESR:
 Private search engines:  
 <https://peekier.com>  
 <https://searx.me>  
-<https://startpage.com>  
 <https://ecosia.org>  
-<https://qwant.com>  
+<https://metager.de/en>  
 <https://swisscows.com>  
+<https://qwant.com>  
 <https://duckduckgo.com>
 
 other private search engines:  
 <https://www.searchencrypt.com>  
-<https://findx.com>  
-<https://unbubble.eu>
+<https://startpage.com>  
+<https://unbubble.eu>  
+<https://findx.com>
 
 ---
 
