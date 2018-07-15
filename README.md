@@ -14,6 +14,7 @@ media.peerconnection.ice.no_host;true
 media.peerconnection.ice.proxy_only;true
 network.cookie.lifetimePolicy;2
 network.cookie.thirdparty.sessionOnly;true
+network.cookie.thirdparty.nonsecureSessionOnly;true
 places.history.enabled;false
 browser.storageManager.enabled;true
 dom.storageManager.enabled;true
