@@ -15,6 +15,11 @@ media.peerconnection.ice.proxy_only;true
 network.cookie.lifetimePolicy;2
 network.cookie.thirdparty.sessionOnly;true
 network.cookie.thirdparty.nonsecureSessionOnly;true
+network.http.referer.XOriginPolicy;1
+network.http.referer.XOriginTrimmingPolicy;2
+network.http.referer.userControlPolicy;2
+network.http.referer.defaultPolicy;2
+network.http.referer.defaultPolicy.pbmode;2
 places.history.enabled;false
 browser.storageManager.enabled;true
 dom.storageManager.enabled;true
@@ -80,21 +85,28 @@ security.pki.sha1_enforcement_level;1
 security.ssl3.dhe_rsa_aes_128_sha;false
 security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256;false
 security.ssl3.ecdhe_ecdsa_aes_128_sha;false
-security.ssl3.ecdhe_rsa_aes_128_gcm_sha256;false
 security.ssl3.ecdhe_rsa_aes_128_sha;false
 security.ssl3.rsa_des_ede3_sha;false
+extensions.pocket.enabled;false
+browser.tabs.closeWindowWithLastTab;false
 ```
 
-if next is true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint:
+if next is false, then dynadot shall not work:
 
 ```
-privacy.resistFingerprinting;true
+security.ssl3.ecdhe_rsa_aes_128_gcm_sha256;false
 ```
 
 if next is false, then mega.nz shall not work:
 
 ```
 security.ssl3.rsa_aes_128_sha;false
+```
+
+if next is true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint:
+
+```
+privacy.resistFingerprinting;true
 ```
 
 for Firefox 60:
@@ -114,8 +126,6 @@ network.trr.mode;2
 optional:
 
 ```
-extensions.pocket.enabled;false
-browser.tabs.closeWindowWithLastTab;false
 browser.display.use_document_fonts;0
 ```
 
