@@ -87,6 +87,7 @@ security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256;false
 security.ssl3.ecdhe_ecdsa_aes_128_sha;false
 security.ssl3.ecdhe_rsa_aes_128_sha;false
 security.ssl3.rsa_des_ede3_sha;false
+browser.link.open_newwindow.restriction;0
 extensions.pocket.enabled;false
 browser.tabs.closeWindowWithLastTab;false
 ```
@@ -126,6 +127,7 @@ network.trr.mode;2
 optional:
 
 ```
+network.cookie.cookieBehavior;1
 browser.display.use_document_fonts;0
 ```
 
