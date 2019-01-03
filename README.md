@@ -47,7 +47,7 @@ privacy.firstparty.isolate;true
 general.oscpu.override;Linux x86_64
 general.platform.override;Linux x86_64
 general.appversion.override;5.0 (X11)
-general.buildID.override;20220101000000
+general.buildID.override;20100101000000
 general.useragent.locale;en-US
 privacy.sanitize.sanitizeOnShutdown;true
 privacy.sanitize.timeSpan;0
@@ -162,7 +162,7 @@ for new Firefox Quantum:
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/>  
 for Firefox ESR:  
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/versions/0.1.4>  
-`Mozilla/5.0 (X11; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0`
+`Mozilla/5.0 (X11; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0`
 
 <https://addons.mozilla.org/en-US/firefox/addon/dnssec/>
 
