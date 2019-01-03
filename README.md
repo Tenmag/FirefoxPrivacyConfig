@@ -186,11 +186,11 @@ for Firefox ESR:
 
 Private search engines:  
 <https://peekier.com>  
+<https://qwant.com>  
 <https://searx.me>  
+<https://swisscows.com>  
 <https://ecosia.org>  
 <https://metager.de/en>  
-<https://swisscows.com>  
-<https://qwant.com>  
 <https://duckduckgo.com>
 
 other private search engines:  
