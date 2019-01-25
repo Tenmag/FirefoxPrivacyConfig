@@ -5,19 +5,19 @@ user_pref("media.peerconnection.ice.no_host",true); // no IP leak by webrtc
 user_pref("media.peerconnection.ice.proxy_only",true); // no IP leak by webrtc
 user_pref("network.cookie.lifetimePolicy",2); // clear cookies on browser close
 user_pref("network.cookie.thirdparty.sessionOnly",true); // clear 3rdparty cookies on session close
-user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true); // FF58 treat cookies set over non-secure HTTP as session cookies
-// user_pref("network.cookie.cookieBehavior",1); // never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, etc.
-user_pref("network.http.referer.XOriginPolicy", 1); // send a referer only if base domains match, no 3rd parties
-user_pref("network.http.referer.XOriginTrimmingPolicy", 2); // FF52, send only scheme+host+port, no full URI data
-user_pref("network.http.referer.userControlPolicy", 2); // FF53 strict-origin-when-cross-origin
-user_pref("network.http.referer.defaultPolicy", 2); // FF59 strict-origin-when-cross-origin
-user_pref("network.http.referer.defaultPolicy.pbmode", 2); // FF59 strict-origin-when-cross-origin
+user_pref("network.cookie.thirdparty.nonsecureSessionOnly",true); // FF58 treat cookies set over non-secure HTTP as session cookies
+user_pref("network.cookie.cookieBehavior",1); // never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, etc.
+user_pref("network.http.referer.XOriginPolicy",1); // send a referer only if base domains match, no 3rd parties
+user_pref("network.http.referer.XOriginTrimmingPolicy",2); // FF52, send only scheme+host+port, no full URI data
+user_pref("network.http.referer.userControlPolicy",2); // FF53 strict-origin-when-cross-origin
+user_pref("network.http.referer.defaultPolicy",2); // FF59 strict-origin-when-cross-origin
+user_pref("network.http.referer.defaultPolicy.pbmode",2); // FF59 strict-origin-when-cross-origin
 user_pref("places.history.enabled",false);
 user_pref("browser.storageManager.enabled",true);
 user_pref("dom.storageManager.enabled",true);
-user_pref("dom.caches.enabled", false);
-// user_pref("dom.storage.enabled", false); // uBlock and app.standardnotes.org and some sites shall not work
-// user_pref("dom.indexedDB.enabled", false); // uBlock and app.standardnotes.org and some sites shall not work
+user_pref("dom.caches.enabled",false);
+// user_pref("dom.storage.enabled",false); // uBlock and app.standardnotes.org and some sites shall not work
+// user_pref("dom.indexedDB.enabled",false); // uBlock and app.standardnotes.org and some sites shall not work
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
@@ -63,7 +63,7 @@ user_pref("security.ssl.treat_unsafe_negotiation_as_broken",true);
 user_pref("dom.enable_performance",false);
 // user_pref("privacy.resistFingerprinting",true); // if true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint
 
-user_pref("offline-apps.allow_by_default", false); // ask to store data offline
+user_pref("offline-apps.allow_by_default",false); // ask to store data offline
 user_pref("dom.mozTCPSocket.enabled",false);
 user_pref("dom.netinfo.enabled",false); // disable connection info leak
 user_pref("dom.telephony.enabled",false);
@@ -94,9 +94,17 @@ user_pref("privacy.userContext.longPressBehavior",2);
 user_pref("network.trr.uri","https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
 user_pref("network.trr.mode",2);
-user_pref("browser.cache.offline.insecure.enable", false);
+user_pref("browser.cache.offline.insecure.enable",false);
 user_pref("browser.link.open_newwindow.restriction",0); // Divert all links according to browser.link.open_newwindow.
 user_pref("extensions.pocket.enabled",false);
+user_pref("media.eme.enabled",false); // disable DRM
+user_pref("social.enabled",false);
+user_pref("social.directories","");
+user_pref("social.remote-install.enabled",false);
+user_pref("social.share.activationPanelEnabled",false);
+user_pref("social.shareDirectory","");
+user_pref("social.toast-notifications.enabled",false);
+user_pref("social.whitelist","");
 user_pref("browser.tabs.closeWindowWithLastTab",false); // cookie deletion addons can deal with last closed tab
 // optional:
 user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
