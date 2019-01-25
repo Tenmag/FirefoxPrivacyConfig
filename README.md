@@ -89,6 +89,14 @@ security.ssl3.ecdhe_rsa_aes_128_sha;false
 security.ssl3.rsa_des_ede3_sha;false
 browser.link.open_newwindow.restriction;0
 extensions.pocket.enabled;false
+media.eme.enabled;false
+social.enabled;false
+social.directories;
+social.remote-install.enabled;false
+social.share.activationPanelEnabled;false
+social.shareDirectory;
+social.toast-notifications.enabled;false
+social.whitelist;
 browser.tabs.closeWindowWithLastTab;false
 ```
 
@@ -187,17 +195,12 @@ for Firefox ESR:
 Private search engines:  
 <https://peekier.com>  
 <https://qwant.com>  
-<https://searx.me>  
-<https://swisscows.com>  
 <https://ecosia.org>  
-<https://metager.de/en>  
-<https://duckduckgo.com>
-
-other private search engines:  
-<https://www.searchencrypt.com>  
 <https://startpage.com>  
-<https://unbubble.eu>  
-<https://findx.com>
+<https://swisscows.com>  
+<https://duckduckgo.com>  
+<https://searx.me>  
+<https://searx.site>
 
 ---
 
