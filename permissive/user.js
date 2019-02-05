@@ -6,7 +6,7 @@ user_pref("media.peerconnection.ice.proxy_only",true); // no IP leak by webrtc
 user_pref("network.cookie.lifetimePolicy",2); // clear cookies on browser close
 user_pref("network.cookie.thirdparty.sessionOnly",true); // clear 3rdparty cookies on session close
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly",true); // FF58 treat cookies set over non-secure HTTP as session cookies
-// user_pref("network.cookie.cookieBehavior",1); // never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, etc.
+user_pref("network.cookie.cookieBehavior",3); // 1: never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, tunnelbear, etc. 3: from visited
 user_pref("network.http.referer.XOriginPolicy",1); // send a referer only if base domains match, no 3rd parties
 user_pref("network.http.referer.XOriginTrimmingPolicy",2); // FF52, send only scheme+host+port, no full URI data
 user_pref("network.http.referer.userControlPolicy",2); // FF53 strict-origin-when-cross-origin
@@ -37,7 +37,7 @@ user_pref("extensions.shield-recipe-client.enabled",false);
 user_pref("network.predictor.enabled",false);
 user_pref("network.http.speculative-parallel-limit",0);
 user_pref("privacy.donottrackheader.enabled",true);
-user_pref("privacy.firstparty.isolate",true);
+user_pref("privacy.firstparty.isolate",true); // breaks tunnelbear
 // user_pref("general.oscpu.override","Linux x86_64");
 // user_pref("general.platform.override","Linux x86_64");
 // user_pref("general.appversion.override","5.0 (X11)");
@@ -106,6 +106,10 @@ user_pref("social.shareDirectory","");
 user_pref("social.toast-notifications.enabled",false);
 user_pref("social.whitelist","");
 user_pref("browser.tabs.closeWindowWithLastTab",false); // cookie deletion addons can deal with last closed tab
+user_pref("extensions.allowPrivateBrowsingByDefault",true); // FF65
+user_pref("media.autoplay.enabled",false);
 // optional:
+user_pref("network.proxy.type",0);
 // user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0");
