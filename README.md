@@ -12,6 +12,7 @@ browser.tabs.loadInBackground;false
 webgl.disabled;true
 media.peerconnection.ice.no_host;true
 media.peerconnection.ice.proxy_only;true
+privacy.clearOnShutdown.cookies;true
 network.cookie.lifetimePolicy;2
 network.cookie.thirdparty.sessionOnly;true
 network.cookie.thirdparty.nonsecureSessionOnly;true
