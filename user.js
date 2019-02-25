@@ -90,15 +90,15 @@ user_pref("privacy.userContext.enabled",true);
 user_pref("privacy.userContext.ui.enabled",true);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
-// for Firefox 60:
+// for Firefox 60 DNS over HTTPS:
 user_pref("network.trr.uri","https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
 user_pref("network.trr.mode",2);
-user_pref("browser.cache.offline.insecure.enable",false);
-user_pref("browser.link.open_newwindow.restriction",0); // Divert all links according to browser.link.open_newwindow.
 // for Firefox 65:
 user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
 //
+user_pref("browser.cache.offline.insecure.enable",false);
+user_pref("browser.link.open_newwindow.restriction",0); // Divert all links according to browser.link.open_newwindow.
 user_pref("extensions.pocket.enabled",false);
 user_pref("media.eme.enabled",false); // disable DRM
 user_pref("social.enabled",false);
