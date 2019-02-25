@@ -3,7 +3,7 @@ user_pref("browser.tabs.loadInBackground",false);
 user_pref("webgl.disabled",true);
 user_pref("media.peerconnection.ice.no_host",true); // no IP leak by webrtc
 user_pref("media.peerconnection.ice.proxy_only",true); // no IP leak by webrtc
-user_pref("privacy.clearOnShutdown.cookies",true) // clear cookies on browser close
+user_pref("privacy.clearOnShutdown.cookies",true); // clear cookies on browser close
 user_pref("network.cookie.lifetimePolicy",2); // clear cookies on browser close
 user_pref("network.cookie.thirdparty.sessionOnly",true); // clear 3rdparty cookies on session close
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly",true); // FF58 treat cookies set over non-secure HTTP as session cookies
@@ -63,7 +63,6 @@ user_pref("security.tls.unrestricted_rc4_fallback",false);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken",true);
 user_pref("dom.enable_performance",false);
 // user_pref("privacy.resistFingerprinting",true); // if true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint
-
 user_pref("offline-apps.allow_by_default",false); // ask to store data offline
 user_pref("dom.mozTCPSocket.enabled",false);
 user_pref("dom.netinfo.enabled",false); // disable connection info leak
@@ -95,6 +94,9 @@ user_pref("privacy.userContext.longPressBehavior",2);
 user_pref("network.trr.uri","https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
 user_pref("network.trr.mode",2);
+// for Firefox 65:
+user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
+//
 user_pref("browser.cache.offline.insecure.enable",false);
 user_pref("browser.link.open_newwindow.restriction",0); // Divert all links according to browser.link.open_newwindow.
 user_pref("extensions.pocket.enabled",false);
