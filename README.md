@@ -133,6 +133,12 @@ network.trr.bootstrapAddress;1.1.1.1
 network.trr.mode;2
 ```
 
+Encrypted SNI since Firefox 65:
+
+```
+network.security.esni.enabled;true
+```
+
 optional:
 
 ```
