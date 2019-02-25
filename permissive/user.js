@@ -90,7 +90,7 @@ user_pref("privacy.userContext.enabled",true);
 user_pref("privacy.userContext.ui.enabled",true);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
-// for Firefox 60:
+// for Firefox 60 DNS over HTTPS:
 user_pref("network.trr.uri","https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
 user_pref("network.trr.mode",2);
