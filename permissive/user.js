@@ -91,9 +91,9 @@ user_pref("privacy.userContext.ui.enabled",true);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
 // for Firefox 60 DNS over HTTPS:
-user_pref("network.trr.uri","https://cloudflare-dns.com/dns-query");
+user_pref("network.trr.uri","https://mozilla.cloudflare-dns.com/dns-query"); // https://cloudflare-dns.com/dns-query https://1.1.1.1/dns-query
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
-user_pref("network.trr.mode",2);
+user_pref("network.trr.mode",2); // 2: DNS over HTTPS first with fallback, 3: DoH TRR only
 // for Firefox 65:
 user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
 //
