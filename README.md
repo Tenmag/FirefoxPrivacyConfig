@@ -101,17 +101,7 @@ social.whitelist;
 browser.tabs.closeWindowWithLastTab;false
 ```
 
-if next is false, then dynadot shall not work:
-
-```
-security.ssl3.ecdhe_rsa_aes_128_gcm_sha256;false
-```
-
-if next is false, then mega.nz shall not work:
-
-```
-security.ssl3.rsa_aes_128_sha;false
-```
+(for a full list and explanations, see the user.js file)
 
 if next is true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint:
 
@@ -126,6 +116,7 @@ browser.cache.offline.insecure.enable;false
 ```
 
 DNS over HTTPS since Firefox 60:
+(privacy policy: https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/firefox/ )
 
 ```
 network.trr.uri;https://mozilla.cloudflare-dns.com/dns-query
@@ -155,7 +146,7 @@ __Extensions/addons:__
 <https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/>
 
 <https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/>  
-about:config container settings for Firefox ESR:
+about:config container settings for Firefox ESR 52:
 
 ```
 privacy.userContext.enabled;true
@@ -164,20 +155,20 @@ privacy.usercontext.about_newtab_segregation.enabled;true
 privacy.userContext.longPressBehavior;2
 ```
 
-for new Firefox Quantum:  
+for Firefox Quantum:  
 <https://addons.mozilla.org/en-US/firefox/addon/smart-https-revived/>  
-for Firefox ESR:  
+for Firefox ESR 52:  
 <https://addons.mozilla.org/en-US/firefox/addon/smart-https/>
 
 <https://addons.mozilla.org/en-US/firefox/addon/canvasblocker/>
 
 <https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/>
 
-for new Firefox Quantum:  
+for Firefox Quantum:  
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/>  
-for Firefox ESR:  
+for Firefox ESR 52:  
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/versions/0.1.4>  
-`Mozilla/5.0 (X11; Linux x86_64; rv:64.0) Gecko/20100101 Firefox/64.0`
+`Mozilla/5.0 (X11; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0`
 
 <https://addons.mozilla.org/en-US/firefox/addon/dnssec/>
 
@@ -190,21 +181,36 @@ for Firefox ESR:
 <https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/>
 
 optional:  
+<https://addons.mozilla.org/en-US/firefox/addon/css-exfil-protection/>
+
+<https://addons.mozilla.org/en-US/firefox/addon/umatrix/>
+
 <https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/>
 
-for new Firefox Quantum:  
-<https://addons.mozilla.org/en-US/firefox/addon/web-developer/>  
-for Firefox ESR:  
+<https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/>
+
+<https://addons.mozilla.org/en-US/firefox/addon/ecleaner-forget-button/>
+
+<https://addons.mozilla.org/en-US/firefox/addon/clearurls/>
+
+<https://addons.mozilla.org/en-US/firefox/addon/neat-url/>
+
+for Firefox Quantum:  
+<https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/>
+
+for Firefox ESR 52:  
 <https://addons.mozilla.org/en-US/firefox/addon/web-developer/versions/1.2.13>
+for Firefox Quantum:  
+<https://addons.mozilla.org/en-US/firefox/addon/web-developer/>  
 
 ---
 
 Private search engines:  
-<https://peekier.com>  
+<https://startpage.com>  
 <https://qwant.com>  
 <https://ecosia.org>  
-<https://startpage.com>  
 <https://swisscows.com>  
+<https://peekier.com>  
 <https://duckduckgo.com>  
 <https://searx.me>  
 <https://searx.site>
@@ -216,4 +222,3 @@ _Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.
 ---
 
 [Donate/Támogatás](https://paypal.me/Tenmag)
-
