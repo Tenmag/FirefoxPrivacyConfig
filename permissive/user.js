@@ -7,7 +7,7 @@ user_pref("privacy.clearOnShutdown.cookies",true); // clear cookies on browser c
 user_pref("network.cookie.lifetimePolicy",2); // clear cookies on browser close
 user_pref("network.cookie.thirdparty.sessionOnly",true); // clear 3rdparty cookies on session close
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly",true); // FF58 treat cookies set over non-secure HTTP as session cookies
-user_pref("network.cookie.cookieBehavior",3); // 1: never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, tunnelbear, etc. 3: from visited
+user_pref("network.cookie.cookieBehavior",1); // 1: never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, tunnelbear, etc. 3: from visited
 user_pref("network.http.referer.XOriginPolicy",1); // send a referer only if base domains match, no 3rd parties
 user_pref("network.http.referer.XOriginTrimmingPolicy",2); // FF52, send only scheme+host+port, no full URI data
 user_pref("network.http.referer.userControlPolicy",2); // FF53 strict-origin-when-cross-origin
@@ -34,16 +34,19 @@ user_pref("network.allow-experiments",false);
 user_pref("browser.uitour.enabled",false);
 user_pref("datareporting.healthreport.service.enabled",false);
 user_pref("datareporting.healthreport.uploadEnabled",false);
+user_pref("toolkit.telemetry.enabled",false); // default false
+user_pref("toolkit.telemetry.unified",false);
+user_pref("toolkit.telemetry.archive.enabled",false);
 user_pref("extensions.shield-recipe-client.enabled",false);
 user_pref("network.predictor.enabled",false);
 user_pref("network.http.speculative-parallel-limit",0);
 user_pref("privacy.donottrackheader.enabled",true);
 user_pref("privacy.firstparty.isolate",true); // breaks tunnelbear
-// user_pref("general.oscpu.override","Linux x86_64");
-// user_pref("general.platform.override","Linux x86_64");
-// user_pref("general.appversion.override","5.0 (X11)");
-// user_pref("general.buildID.override","20100101000000");
-// user_pref("general.useragent.locale","en-US");
+user_pref("general.oscpu.override","Linux x86_64");
+user_pref("general.platform.override","Linux x86_64");
+user_pref("general.appversion.override","5.0 (X11)");
+user_pref("general.buildID.override","20100101000000");
+user_pref("general.useragent.locale","en-US");
 user_pref("privacy.sanitize.sanitizeOnShutdown",true);
 user_pref("privacy.sanitize.timeSpan",0); // everything
 user_pref("privacy.clearOnShutdown.offlineApps",true);
@@ -54,7 +57,7 @@ user_pref("privacy.cpd.siteSettings",true);
 user_pref("browser.cache.disk.capacity",0);
 user_pref("browser.cache.disk.smart_size.enabled",false);
 user_pref("browser.cache.disk.enable",false);
-// user_pref("signon.rememberSignons",false);
+user_pref("signon.rememberSignons",false);
 user_pref("browser.formfill.enable",false);
 user_pref("browser.newtabpage.enabled",false);
 user_pref("browser.newtabpage.enhanced",false);
@@ -71,26 +74,26 @@ user_pref("beacon.enabled",false); // disable analytics
 user_pref("browser.send_pings",false);
 user_pref("security.xpconnect.plugin.unrestricted",false);
 user_pref("media.video_stats.enabled",false);
-// user_pref("browser.safebrowsing.downloads.remote.enabled",false); // google app rep db query disabled
+user_pref("browser.safebrowsing.downloads.remote.enabled",false); // google app rep db query disabled
 user_pref("network.captive-portal-service.enabled",false);
 user_pref("browser.sessionstore.privacy_level",2); // clear ssl form session
 user_pref("security.ask_for_password",2); // ask for master password every n minutes
 user_pref("security.password_lifetime",1); // n=1 minute
 user_pref("security.cert_pinning.enforcement_level",2); // public key pinning always
 user_pref("security.pki.sha1_enforcement_level",1); // disable shattered sha1
-// user_pref("security.ssl3.dhe_rsa_aes_128_sha",false);
-// user_pref("security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256",false);
-// user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha",false);
+user_pref("security.ssl3.dhe_rsa_aes_128_sha",false);
+user_pref("security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256",false);
+user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha",false);
 // user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false); // if false, dynadot shall not work
-// user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
+user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
 // user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz shall not work
-// user_pref("security.ssl3.rsa_des_ede3_sha",false);
-// for Firefox ESR:
+user_pref("security.ssl3.rsa_des_ede3_sha",false);
+// for Firefox ESR 52:
 user_pref("privacy.userContext.enabled",true);
 user_pref("privacy.userContext.ui.enabled",true);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
-// for Firefox 60 DNS over HTTPS:
+// for Firefox 60 DNS over HTTPS: (privacy policy: https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/firefox/ )
 user_pref("network.trr.uri","https://mozilla.cloudflare-dns.com/dns-query"); // https://cloudflare-dns.com/dns-query https://1.1.1.1/dns-query
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
 user_pref("network.trr.mode",2); // 2: DNS over HTTPS first with fallback, 3: DoH TRR only
@@ -113,6 +116,6 @@ user_pref("extensions.allowPrivateBrowsingByDefault",true); // FF65
 user_pref("media.autoplay.enabled",false);
 // optional:
 user_pref("network.proxy.type",0);
-// user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0");
+user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
+user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0");
