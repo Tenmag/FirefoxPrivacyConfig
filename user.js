@@ -34,6 +34,9 @@ user_pref("network.allow-experiments",false);
 user_pref("browser.uitour.enabled",false);
 user_pref("datareporting.healthreport.service.enabled",false);
 user_pref("datareporting.healthreport.uploadEnabled",false);
+user_pref("toolkit.telemetry.enabled",false); // default false
+user_pref("toolkit.telemetry.unified",false);
+user_pref("toolkit.telemetry.archive.enabled",false);
 user_pref("extensions.shield-recipe-client.enabled",false);
 user_pref("network.predictor.enabled",false);
 user_pref("network.http.speculative-parallel-limit",0);
@@ -85,12 +88,12 @@ user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha",false);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
 // user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz shall not work
 user_pref("security.ssl3.rsa_des_ede3_sha",false);
-// for Firefox ESR:
+// for Firefox ESR 52:
 user_pref("privacy.userContext.enabled",true);
 user_pref("privacy.userContext.ui.enabled",true);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
-// for Firefox 60 DNS over HTTPS:
+// for Firefox 60 DNS over HTTPS: (privacy policy: https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/firefox/ )
 user_pref("network.trr.uri","https://mozilla.cloudflare-dns.com/dns-query"); // https://cloudflare-dns.com/dns-query https://1.1.1.1/dns-query
 user_pref("network.trr.bootstrapAddress","1.1.1.1");
 user_pref("network.trr.mode",2); // 2: DNS over HTTPS first with fallback, 3: DoH TRR only
@@ -114,5 +117,5 @@ user_pref("media.autoplay.enabled",false);
 // optional:
 user_pref("network.proxy.type",0);
 user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
-user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:65.0) Gecko/20100101 Firefox/65.0");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0");
+user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0");
