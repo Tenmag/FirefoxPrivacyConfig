@@ -93,10 +93,14 @@ user_pref("privacy.userContext.enabled",true);
 user_pref("privacy.userContext.ui.enabled",true);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
-// for Firefox 60 DNS over HTTPS: (privacy policy: https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/firefox/ )
-user_pref("network.trr.uri","https://mozilla.cloudflare-dns.com/dns-query"); // https://cloudflare-dns.com/dns-query https://1.1.1.1/dns-query
-user_pref("network.trr.bootstrapAddress","1.1.1.1");
+// for Firefox 60 DNS over HTTPS:
+// user_pref("network.trr.uri","https://doh.appliedprivacy.net/query"); // web: https://appliedprivacy.net/services/dns/
+user_pref("network.trr.uri","https://doh.securedns.eu/dns-query"); // web: https://securedns.eu
+user_pref("network.trr.bootstrapAddress","146.185.167.43");
 user_pref("network.trr.mode",2); // 2: DNS over HTTPS first with fallback, 3: DoH TRR only
+// user_pref("network.trr.uri","https://mozilla.cloudflare-dns.com/dns-query"); // alt: https://cloudflare-dns.com/dns-query alt: https://1.1.1.1/dns-query
+// user_pref("network.trr.bootstrapAddress","1.1.1.1"); // Cloudflare DNS
+// (Cloudflare privacy policy: https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/firefox/ )
 // for Firefox 65:
 user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
 //
