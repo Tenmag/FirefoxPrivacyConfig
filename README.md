@@ -116,11 +116,10 @@ browser.cache.offline.insecure.enable;false
 ```
 
 DNS over HTTPS since Firefox 60:
-(privacy policy: https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/firefox/ )
 
 ```
-network.trr.uri;https://mozilla.cloudflare-dns.com/dns-query
-network.trr.bootstrapAddress;1.1.1.1
+network.trr.uri;https://doh.securedns.eu/dns-query
+network.trr.bootstrapAddress;146.185.167.43
 network.trr.mode;2
 ```
 
@@ -207,11 +206,11 @@ for Firefox Quantum:
 
 Private search engines:  
 <https://startpage.com>  
-<https://qwant.com>  
 <https://ecosia.org>  
-<https://swisscows.com>  
-<https://peekier.com>  
 <https://duckduckgo.com>  
+<https://peekier.com>  
+<https://qwant.com>  
+<https://swisscows.com>  
 <https://searx.me>  
 <https://searx.site>
 
@@ -222,3 +221,4 @@ _Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.
 ---
 
 [Donate/Támogatás](https://paypal.me/Tenmag)
+
