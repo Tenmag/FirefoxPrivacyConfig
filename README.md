@@ -198,7 +198,7 @@ for Firefox Quantum:
 <https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/>
 
 for Firefox ESR 52:  
-<https://addons.mozilla.org/en-US/firefox/addon/web-developer/versions/1.2.13>
+<https://addons.mozilla.org/en-US/firefox/addon/web-developer/versions/1.2.13>  
 for Firefox Quantum:  
 <https://addons.mozilla.org/en-US/firefox/addon/web-developer/>  
 
