@@ -200,7 +200,7 @@ for Firefox Quantum:
 for Firefox ESR 52:  
 <https://addons.mozilla.org/en-US/firefox/addon/web-developer/versions/1.2.13>  
 for Firefox Quantum:  
-<https://addons.mozilla.org/en-US/firefox/addon/web-developer/>  
+<https://addons.mozilla.org/en-US/firefox/addon/web-developer/>
 
 ---
 
