@@ -37,6 +37,12 @@ user_pref("datareporting.healthreport.uploadEnabled",false);
 user_pref("toolkit.telemetry.enabled",false); // default false
 user_pref("toolkit.telemetry.unified",false);
 user_pref("toolkit.telemetry.archive.enabled",false);
+user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("media.getusermedia.screensharing.enabled", false);
+user_pref("device.sensors.enabled", false);
+user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.shield-recipe-client.enabled",false);
 user_pref("network.predictor.enabled",false);
 user_pref("network.http.speculative-parallel-limit",0);
@@ -121,6 +127,13 @@ user_pref("social.whitelist","");
 user_pref("browser.tabs.closeWindowWithLastTab",false); // cookie deletion addons can deal with last closed tab
 user_pref("extensions.allowPrivateBrowsingByDefault",true); // FF65
 user_pref("media.autoplay.enabled",false);
+// checks of extensions and telemetry of update
+user_pref("app.update.auto", false);
+// user_pref("app.update.enabled", false); check for update
+user_pref("app.update.service.enabled", false);
+user_pref("extensions.update.autoUpdateDefault", false);
+user_pref("extensions.update.enabled", false);
+user_pref("xpinstall.signatures.required", false);
 // optional:
 user_pref("network.proxy.type",0);
 // user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
