@@ -220,5 +220,5 @@ _Copy [user.js](https://github.com/Tenmag/FirefoxPrivacyConfig/blob/master/user.
 
 ---
 
-[Donate/T·mogat·s](https://paypal.me/Tenmag)
+[Donate/T√°mogat√°s](https://paypal.me/Tenmag)
 
