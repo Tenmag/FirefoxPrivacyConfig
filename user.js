@@ -17,8 +17,8 @@ user_pref("places.history.enabled",false);
 user_pref("browser.storageManager.enabled",true);
 user_pref("dom.storageManager.enabled",true);
 user_pref("dom.caches.enabled",false);
-user_pref("dom.storage.enabled",false); // uBlock and app.standardnotes.org and some sites may not work
-// user_pref("dom.indexedDB.enabled",false); // uBlock and app.standardnotes.org and some sites shall not work
+user_pref("dom.storage.enabled",false); // uBlock and app.standardnotes.org and new reddit and some sites may not work
+// user_pref("dom.indexedDB.enabled",false); // uBlock and app.standardnotes.org and new reddit and some sites shall not work
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
