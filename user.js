@@ -21,6 +21,8 @@ user_pref("dom.caches.enabled",false);
 // dom.storage for evercookies, zombie cookies... any JavaScript code on your or any page (XSS) can access local storage, it has no data protection
 // user_pref("dom.storage.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail shall not work and new reddit and imgur and some sites may not work properly
 // user_pref("dom.indexedDB.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail and new reddit and imgur and some sites shall not work
+// user_pref("dom.serviceWorkers.enabled",false);
+// user_pref("dom.workers.enabled",false);
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
@@ -140,6 +142,6 @@ user_pref("xpinstall.signatures.required", false);
 user_pref("network.proxy.type",0);
 user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0");
 // user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36");
-user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0");
+user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0");
