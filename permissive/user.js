@@ -105,8 +105,8 @@ user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
 // for Firefox 60 DNS over HTTPS:
 user_pref("network.trr.mode",2); // 2: DNS over HTTPS first with fallback, 3: DoH TRR only. Mode 2 often doesn't work with all requests and leaks DNS
-// user_pref("network.trr.uri","https://doh.securedns.eu/dns-query"); // web: https://securedns.eu
-user_pref("network.trr.uri","https://ads-doh.securedns.eu/dns-query"); // adblocker. web: https://securedns.eu
+user_pref("network.trr.uri","https://doh.securedns.eu/dns-query"); // web: https://securedns.eu
+// user_pref("network.trr.uri","https://ads-doh.securedns.eu/dns-query"); // adblocker. web: https://securedns.eu
 user_pref("network.trr.bootstrapAddress","146.185.167.43"); // web: https://securedns.eu
 // user_pref("network.trr.uri","https://dns.digitale-gesellschaft.ch/dns-query"); // web: https://www.digitale-gesellschaft.ch/dns/
 // user_pref("network.trr.bootstrapAddress","185.95.218.42"); // web: https://www.digitale-gesellschaft.ch/dns/

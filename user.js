@@ -21,8 +21,8 @@ user_pref("dom.caches.enabled",false);
 // dom.storage for evercookies, zombie cookies... any JavaScript code on your or any page (XSS) can access local storage, it has no data protection
 // user_pref("dom.storage.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail shall not work and new reddit and imgur and some sites may not work properly
 // user_pref("dom.indexedDB.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail and new reddit and imgur and some sites shall not work
-// user_pref("dom.serviceWorkers.enabled",false);
-// user_pref("dom.workers.enabled",false);
+user_pref("dom.serviceWorkers.enabled",false);
+user_pref("dom.workers.enabled",false);
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
@@ -105,8 +105,8 @@ user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
 // for Firefox 60 DNS over HTTPS:
 user_pref("network.trr.mode",3); // 2: DNS over HTTPS first with fallback, 3: DoH TRR only. Mode 2 often doesn't work with all requests and leaks DNS
-// user_pref("network.trr.uri","https://doh.securedns.eu/dns-query"); // web: https://securedns.eu
-user_pref("network.trr.uri","https://ads-doh.securedns.eu/dns-query"); // adblocker. web: https://securedns.eu
+user_pref("network.trr.uri","https://doh.securedns.eu/dns-query"); // web: https://securedns.eu
+// user_pref("network.trr.uri","https://ads-doh.securedns.eu/dns-query"); // adblocker. web: https://securedns.eu
 user_pref("network.trr.bootstrapAddress","146.185.167.43"); // web: https://securedns.eu
 // user_pref("network.trr.uri","https://dns.digitale-gesellschaft.ch/dns-query"); // web: https://www.digitale-gesellschaft.ch/dns/
 // user_pref("network.trr.bootstrapAddress","185.95.218.42"); // web: https://www.digitale-gesellschaft.ch/dns/
