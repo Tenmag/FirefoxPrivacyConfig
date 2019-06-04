@@ -22,7 +22,7 @@ user_pref("dom.caches.enabled",false);
 // user_pref("dom.storage.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail shall not work and new reddit and imgur and some sites may not work properly
 // user_pref("dom.indexedDB.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail and new reddit and imgur and some sites shall not work
 user_pref("dom.serviceWorkers.enabled",false);
-user_pref("dom.workers.enabled",false);
+// user_pref("dom.workers.enabled",false); // Tutanota shall not work
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
