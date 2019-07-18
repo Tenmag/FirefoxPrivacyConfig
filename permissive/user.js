@@ -14,6 +14,8 @@ user_pref("network.http.referer.XOriginTrimmingPolicy",2); // FF52, send only sc
 user_pref("network.http.referer.userControlPolicy",2); // FF53 strict-origin-when-cross-origin
 user_pref("network.http.referer.defaultPolicy",2); // FF59 strict-origin-when-cross-origin
 user_pref("network.http.referer.defaultPolicy.pbmode",2); // FF59 strict-origin-when-cross-origin
+// user_pref("network.http.sendRefererHeader",0); // 0: Disable referrer headers, breaks sites, Smart Referer addon does it better. 1: Send only on clicked links. 2: [default] Send for links and image.
+// user_pref("network.http.referer.spoofSource",true); // Only if network.http.sendRefererHeader is 2 ! network.http.referer.XOriginPolicy is better.
 user_pref("places.history.enabled",false);
 user_pref("browser.storageManager.enabled",true);
 user_pref("dom.storageManager.enabled",true);
@@ -43,9 +45,12 @@ user_pref("toolkit.telemetry.unified",false);
 user_pref("toolkit.telemetry.archive.enabled",false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.cachedClientID","");
+user_pref("browser.aboutHomeSnippets.updateUrl","");
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
 user_pref("device.sensors.enabled", false);
+user_pref("dom.battery.enabled",false);
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.shield-recipe-client.enabled",false);
 user_pref("network.predictor.enabled",false);
@@ -67,6 +72,10 @@ user_pref("privacy.cpd.siteSettings",true);
 user_pref("browser.cache.disk.capacity",0);
 user_pref("browser.cache.disk.smart_size.enabled",false);
 user_pref("browser.cache.disk.enable",false);
+user_pref("browser.cache.offline.insecure.enable",false);
+user_pref("browser.cache.offline.enable",false);
+user_pref("network.prefetch-next",false);
+user_pref("network.dns.disablePrefetch",true);
 // user_pref("signon.rememberSignons",false);
 user_pref("browser.formfill.enable",false);
 user_pref("browser.newtabpage.enabled",false);
@@ -78,6 +87,7 @@ user_pref("dom.enable_performance",false);
 // user_pref("privacy.resistFingerprinting",true); // if true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint
 user_pref("offline-apps.allow_by_default",false); // ask to store data offline
 user_pref("dom.mozTCPSocket.enabled",false);
+// user_pref("network.websocket.max-connections",0); // Disable WebSocket
 user_pref("dom.netinfo.enabled",false); // disable connection info leak
 user_pref("dom.telephony.enabled",false);
 user_pref("beacon.enabled",false); // disable analytics
@@ -117,7 +127,6 @@ user_pref("network.trr.bootstrapAddress","146.185.167.43"); // web: https://secu
 // for Firefox 65:
 user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
 //
-user_pref("browser.cache.offline.insecure.enable",false);
 user_pref("browser.link.open_newwindow.restriction",0); // Divert all links according to browser.link.open_newwindow.
 user_pref("extensions.pocket.enabled",false);
 user_pref("media.eme.enabled",false); // disable DRM
@@ -133,17 +142,23 @@ user_pref("extensions.allowPrivateBrowsingByDefault",true); // FF65
 user_pref("media.autoplay.enabled",false);
 user_pref("browser.newtabpage.enabled",false); // tiles tracking https://bugzilla.mozilla.org/show_bug.cgi?id=1462662
 user_pref("browser.newtabpage.enhanced",false);
-// checks of extensions and telemetry of update
+// checking of extensions and telemetry of update
 user_pref("app.update.auto", false);
 // user_pref("app.update.enabled", false); check for update
 user_pref("app.update.service.enabled", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
 user_pref("xpinstall.signatures.required", false);
+user_pref("dom.event.clipboardevents.enabled",false); // Stop webpage knowing which part of the page had been selected.
+user_pref("dom.event.contextmenu.enabled",false); // Don't allow websites to prevent use of right-click.
+user_pref("browser.search.countryCode","EN");
+user_pref("browser.search.region","EN");
+user_pref("browser.search.useDBForOrder",true);
+
 // optional:
 user_pref("network.proxy.type",0);
 // user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0");
 // user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0");
