@@ -151,8 +151,8 @@ user_pref("extensions.update.enabled", false);
 user_pref("xpinstall.signatures.required", false);
 user_pref("dom.event.clipboardevents.enabled",false); // Stop webpage knowing which part of the page had been selected.
 user_pref("dom.event.contextmenu.enabled",false); // Don't allow websites to prevent use of right-click.
-user_pref("browser.search.countryCode","EN");
-user_pref("browser.search.region","EN");
+user_pref("browser.search.countryCode","GB");
+user_pref("browser.search.region","GB");
 user_pref("browser.search.useDBForOrder",true);
 
 // optional:
