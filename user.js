@@ -1,5 +1,7 @@
 // Firefox privacy config
 user_pref("privacy.trackingprotection.enabled",true);
+user_pref("privacy.trackingprotection.cryptomining.enabled",true); // FF67
+user_pref("privacy.trackingprotection.fingerprinting.enabled",true); // FF67
 user_pref("browser.tabs.loadInBackground",false);
 user_pref("webgl.disabled",true);
 user_pref("media.peerconnection.ice.no_host",true); // no IP leak by webrtc
