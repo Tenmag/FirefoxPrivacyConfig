@@ -132,6 +132,8 @@ user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
 user_pref("browser.link.open_newwindow.restriction",0); // Divert all links according to browser.link.open_newwindow.
 user_pref("browser.link.open_newwindow",3); // Default 3: same window new tab.
 user_pref("browser.link.open_newwindow.disabled_in_fullscreen",true);
+user_pref("dom.disable_window_open_feature.close",true); // Always allow window close
+user_pref("dom.disable_window_open_feature.minimizable",true); // Always allow window minimize
 user_pref("dom.vr.oculus.enabled",false); // facebook-samsung VR off
 user_pref("dom.vr.enabled",false);
 user_pref("extensions.pocket.enabled",false);
