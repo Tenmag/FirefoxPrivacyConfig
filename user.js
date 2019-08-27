@@ -153,7 +153,8 @@ user_pref("browser.newtabpage.enabled",false); // tiles tracking https://bugzill
 user_pref("browser.newtabpage.enhanced",false);
 // checking of extensions and telemetry of update
 user_pref("app.update.auto", false);
-// user_pref("app.update.enabled", false); check for update
+user_pref("app.update.enabled", false); // check for update <FF68 / auto install FF68
+user_pref("app.update.auto.migrated", false); // auto install FF68
 user_pref("app.update.service.enabled", false);
 user_pref("extensions.update.autoUpdateDefault", false);
 user_pref("extensions.update.enabled", false);
