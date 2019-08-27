@@ -6,6 +6,7 @@ user_pref("browser.tabs.loadInBackground",false);
 user_pref("webgl.disabled",true);
 user_pref("media.peerconnection.ice.no_host",true); // no IP leak by webrtc
 user_pref("media.peerconnection.ice.proxy_only",true); // no IP leak by webrtc
+user_pref("media.peerconnection.ice.default_address_only",true); // no IP leak by webrtc
 user_pref("privacy.clearOnShutdown.cookies",true); // clear cookies on browser close
 user_pref("network.cookie.lifetimePolicy",2); // clear cookies on browser close
 user_pref("network.cookie.thirdparty.sessionOnly",true); // clear 3rdparty cookies on session close
@@ -162,6 +163,9 @@ user_pref("dom.event.contextmenu.enabled",false); // Don't allow websites to pre
 user_pref("browser.search.countryCode","GB");
 user_pref("browser.search.region","GB");
 user_pref("browser.search.useDBForOrder",true);
+user_pref("browser.search.widget.inNavBar", true);
+user_pref("browser.urlbar.placeholderName", "");
+user_pref("accessibility.force_disabled", 1);
 
 // optional:
 user_pref("network.proxy.type",0);
