@@ -81,7 +81,7 @@ user_pref("network.prefetch-next",false);
 user_pref("network.dns.disablePrefetch",true);
 user_pref("signon.rememberSignons",false);
 user_pref("browser.formfill.enable",false);
-user_pref("browser.newtabpage.enabled",false);
+user_pref("browser.newtabpage.enabled",false); // tiles tracking https://bugzilla.mozilla.org/show_bug.cgi?id=1462662
 user_pref("browser.newtabpage.enhanced",false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features",false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons",false);
@@ -150,8 +150,6 @@ user_pref("social.whitelist","");
 user_pref("browser.tabs.closeWindowWithLastTab",false); // cookie deletion addons can deal with last closed tab
 user_pref("extensions.allowPrivateBrowsingByDefault",true); // FF65
 user_pref("media.autoplay.enabled",false);
-user_pref("browser.newtabpage.enabled",false); // tiles tracking https://bugzilla.mozilla.org/show_bug.cgi?id=1462662
-user_pref("browser.newtabpage.enhanced",false);
 // checking of extensions and telemetry of update
 user_pref("app.update.auto", false);
 user_pref("app.update.enabled", false); // check for update <FF68 / auto install FF68
