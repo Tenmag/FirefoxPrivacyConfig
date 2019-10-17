@@ -205,14 +205,15 @@ for Firefox Quantum:
 ---
 
 Private search engines:  
-<https://startpage.com>  
+<https://qwant.com>  
+<https://searx.win>  
+<https://searx.site>  
+<https://searx.info>  
+<https://swisscows.com>  
 <https://ecosia.org>  
 <https://duckduckgo.com>  
 <https://peekier.com>  
-<https://qwant.com>  
-<https://swisscows.com>  
-<https://searx.me>  
-<https://searx.site>
+<https://startpage.com>
 
 ---
 
