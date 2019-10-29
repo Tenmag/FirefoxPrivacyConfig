@@ -60,11 +60,11 @@ user_pref("network.predictor.enabled",false);
 user_pref("network.http.speculative-parallel-limit",0);
 user_pref("privacy.donottrackheader.enabled",true);
 user_pref("privacy.firstparty.isolate",true); // breaks tunnelbear
-// user_pref("general.oscpu.override","Linux x86_64");
-// user_pref("general.platform.override","Linux x86_64");
-// user_pref("general.appversion.override","5.0 (X11)");
-// user_pref("general.buildID.override","20100101000000");
-// user_pref("general.useragent.locale","en-US");
+user_pref("general.oscpu.override","x86_64");
+user_pref("general.platform.override","x86_64");
+user_pref("general.appversion.override","5.0");
+user_pref("general.buildID.override","20100101000000");
+user_pref("general.useragent.locale","en-US");
 user_pref("privacy.sanitize.sanitizeOnShutdown",true);
 user_pref("privacy.sanitize.timeSpan",0); // everything
 user_pref("privacy.clearOnShutdown.offlineApps",true);

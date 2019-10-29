@@ -60,9 +60,9 @@ user_pref("network.predictor.enabled",false);
 user_pref("network.http.speculative-parallel-limit",0);
 user_pref("privacy.donottrackheader.enabled",true);
 user_pref("privacy.firstparty.isolate",true); // breaks tunnelbear
-user_pref("general.oscpu.override","Linux x86_64");
-user_pref("general.platform.override","Linux x86_64");
-user_pref("general.appversion.override","5.0 (X11)");
+user_pref("general.oscpu.override","x86_64");
+user_pref("general.platform.override","x86_64");
+user_pref("general.appversion.override","5.0");
 user_pref("general.buildID.override","20100101000000");
 user_pref("general.useragent.locale","en-US");
 user_pref("privacy.sanitize.sanitizeOnShutdown",true);
@@ -171,6 +171,6 @@ user_pref("accessibility.force_disabled", 1);
 user_pref("network.proxy.type",0);
 user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:70.0) Gecko/20100101 Firefox/70.0");
 // user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36");
-user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0");
+user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0");
