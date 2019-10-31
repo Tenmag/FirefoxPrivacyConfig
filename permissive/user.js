@@ -13,7 +13,7 @@ user_pref("network.cookie.thirdparty.sessionOnly",true); // clear 3rdparty cooki
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly",true); // FF58 treat cookies set over non-secure HTTP as session cookies
 user_pref("network.cookie.cookieBehavior",3); // 1: never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, tunnelbear, etc. 3: from visited
 user_pref("network.http.referer.XOriginPolicy",1); // send a referer only if base domains match, no 3rd parties
-user_pref("network.http.referer.XOriginTrimmingPolicy",2); // FF52, send only scheme+host+port, no full URI data
+user_pref("network.http.referer.XOriginTrimmingPolicy",2); // from FF52, send only scheme+host+port, no full URI data
 user_pref("network.http.referer.userControlPolicy",2); // FF53 strict-origin-when-cross-origin
 user_pref("network.http.referer.defaultPolicy",2); // FF59 strict-origin-when-cross-origin
 user_pref("network.http.referer.defaultPolicy.pbmode",2); // FF59 strict-origin-when-cross-origin
@@ -23,7 +23,7 @@ user_pref("places.history.enabled",false);
 user_pref("browser.storageManager.enabled",true);
 user_pref("dom.storageManager.enabled",true);
 user_pref("dom.caches.enabled",false);
-// dom.storage for evercookies, zombie cookies... any JavaScript code on your or any page (XSS) can access local storage, it has no data protection
+// * dom.storage for evercookies, zombie cookies... any JavaScript code on your or any page (XSS) can access local storage, it has no data protection
 // user_pref("dom.storage.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail shall not work and new reddit and imgur and some sites may not work properly
 // user_pref("dom.indexedDB.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail and new reddit and imgur and some sites shall not work
 // user_pref("dom.serviceWorkers.enabled",false);
@@ -85,6 +85,9 @@ user_pref("browser.newtabpage.enabled",false); // tiles tracking https://bugzill
 user_pref("browser.newtabpage.enhanced",false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features",false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons",false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites",false);
+user_pref("browser.newtabpage.activity-stream.feeds.snippets",false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights",false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled",false);
 user_pref("security.tls.version.max",4);
 user_pref("security.tls.unrestricted_rc4_fallback",false);

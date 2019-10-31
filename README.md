@@ -211,8 +211,9 @@ Private search engines:
 <https://searx.info>  
 <https://swisscows.com>  
 <https://ecosia.org>  
-<https://duckduckgo.com>  
 <https://peekier.com>  
+<https://privacywall.org>  
+<https://duckduckgo.com>  
 <https://startpage.com>
 
 ---
