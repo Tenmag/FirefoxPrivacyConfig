@@ -214,6 +214,8 @@ Private search engines:
 <https://peekier.com>  
 <https://privacywall.org>  
 <https://duckduckgo.com>  
+<https://www.givero.com>  
+<https://infinitysearch.co>  
 <https://startpage.com>
 
 ---
