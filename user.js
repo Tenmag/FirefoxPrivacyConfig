@@ -174,6 +174,6 @@ user_pref("accessibility.force_disabled", 1);
 user_pref("network.proxy.type",0);
 user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:71.0) Gecko/20100101 Firefox/71.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0");
 // user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3835.0 Safari/537.36");
-user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:71.0) Gecko/20100101 Firefox/71.0");
+user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0");
