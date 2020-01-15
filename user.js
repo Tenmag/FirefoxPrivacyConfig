@@ -26,8 +26,8 @@ user_pref("dom.caches.enabled",false);
 // * dom.storage for evercookies, zombie cookies... any JavaScript code on your or any page (XSS) can access local storage, it has no data protection
 // user_pref("dom.storage.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail shall not work and new reddit and imgur and some sites may not work properly
 // user_pref("dom.indexedDB.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail and new reddit and imgur and some sites shall not work
-user_pref("dom.serviceWorkers.enabled",false);
 // user_pref("dom.workers.enabled",false); // Tutanota shall not work
+user_pref("dom.serviceWorkers.enabled",false);
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
 user_pref("camera.control.face_detection.enabled",false);
@@ -92,7 +92,7 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled",false);
 user_pref("security.tls.version.max",4);
 user_pref("security.tls.unrestricted_rc4_fallback",false);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken",true);
-user_pref("dom.enable_performance",false);
+user_pref("dom.enable_performance",false); // linkedin and instagram fail if false
 // user_pref("privacy.resistFingerprinting",true); // if true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint
 user_pref("offline-apps.allow_by_default",false); // ask to store data offline
 user_pref("dom.mozTCPSocket.enabled",false);
