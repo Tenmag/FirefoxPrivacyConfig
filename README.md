@@ -207,7 +207,7 @@ for Firefox Quantum:
 Private search engines:  
 <https://qwant.com>  
 <https://searx.win>  
-<https://searx.site>  
+<https://searx.li>  
 <https://searx.info>  
 <https://swisscows.com>  
 <https://ecosia.org>  
