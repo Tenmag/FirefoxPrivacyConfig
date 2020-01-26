@@ -167,7 +167,7 @@ for Firefox Quantum:
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/>  
 for Firefox ESR 52:  
 <https://addons.mozilla.org/en-US/firefox/addon/user-agent-string-switcher/versions/0.1.4>  
-`Mozilla/5.0 (X11; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0`
+`Mozilla/5.0 (X11; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/59.0`
 
 <https://addons.mozilla.org/en-US/firefox/addon/dnssec/>
 
