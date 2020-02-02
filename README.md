@@ -209,6 +209,8 @@ Private search engines:
 <https://searx.win>  
 <https://searx.li>  
 <https://searx.info>  
+<https://searx.xyz>  
+<https://www.finden.tk>  
 <https://swisscows.com>  
 <https://ecosia.org>  
 <https://peekier.com>  
