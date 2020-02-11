@@ -202,6 +202,8 @@ for Firefox ESR 52:
 for Firefox Quantum:  
 <https://addons.mozilla.org/en-US/firefox/addon/web-developer/>
 
+<https://addons.mozilla.org/en-US/firefox/addon/invidition/>
+
 ---
 
 Private search engines:  
