@@ -163,6 +163,10 @@ user_pref("extensions.update.enabled", false);
 user_pref("xpinstall.signatures.required", false);
 user_pref("dom.event.clipboardevents.enabled",false); // Stop webpage knowing which part of the page had been selected.
 user_pref("dom.event.contextmenu.enabled",false); // Don't allow websites to prevent use of right-click.
+user_pref("dom.allow_cut_copy", false); // disable copy to clipboard
+user_pref("clipboard.autocopy", false); // disable Posix autocopy selection
+user_pref("intl.accept_languages", "en-US, en");
+user_pref("intl.locale.matchOS", false);
 user_pref("browser.search.countryCode","GB");
 user_pref("browser.search.region","GB");
 user_pref("browser.search.useDBForOrder",true);
@@ -174,6 +178,6 @@ user_pref("accessibility.force_disabled", 1);
 user_pref("network.proxy.type",0);
 // user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:72.0) Gecko/20100101 Firefox/72.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:73.0) Gecko/20100101 Firefox/73.0");
 // user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3835.0 Safari/537.36");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0");
