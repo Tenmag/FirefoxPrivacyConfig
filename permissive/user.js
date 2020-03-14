@@ -120,6 +120,7 @@ user_pref("security.pki.sha1_enforcement_level",1); // disable shattered sha1
 // user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false); // if false, dynadot shall not work
 // user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
 // user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz shall not work
+// user_pref("security.ssl3.rsa_aes_256_sha",false);
 // user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",false);
 user_pref("security.ssl3.rsa_des_ede3_sha",false);
 // for Firefox ESR 52:
