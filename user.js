@@ -111,11 +111,16 @@ user_pref("security.password_lifetime",1); // n=1 minute
 user_pref("security.cert_pinning.enforcement_level",2); // public key pinning always
 user_pref("security.pki.sha1_enforcement_level",1); // disable shattered sha1
 user_pref("security.ssl3.dhe_rsa_aes_128_sha",false);
+user_pref("security.ssl3.dhe_rsa_aes_256_sha",false);
+user_pref("security.ssl3.dhe_rsa_camellia_128_sha",false);
+user_pref("security.ssl3.dhe_rsa_camellia_256_sha",false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256",false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha",false);
+user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha",false);
 // user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false); // if false, dynadot shall not work
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
-// user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz shall not work
+user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz shall not work
+user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",false);
 user_pref("security.ssl3.rsa_des_ede3_sha",false);
 // for Firefox ESR 52:
 user_pref("privacy.userContext.enabled",true);
