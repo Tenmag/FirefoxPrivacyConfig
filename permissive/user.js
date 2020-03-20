@@ -8,7 +8,7 @@ user_pref("media.peerconnection.ice.no_host",true); // no IP leak by webrtc
 user_pref("media.peerconnection.ice.proxy_only",true); // no IP leak by webrtc
 user_pref("media.peerconnection.ice.default_address_only",true); // no IP leak by webrtc
 user_pref("privacy.clearOnShutdown.cookies",true); // clear cookies on browser close
-user_pref("network.cookie.lifetimePolicy",2); // clear cookies on browser close
+user_pref("network.cookie.lifetimePolicy",2); // 2: clear cookies on browser close, 0: keep
 user_pref("network.cookie.thirdparty.sessionOnly",true); // clear 3rdparty cookies on session close
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly",true); // FF58 treat cookies set over non-secure HTTP as session cookies
 user_pref("network.cookie.cookieBehavior",3); // 1: never accept 3rd party cookies - breaks some sites, like payment gateways, gmail, tunnelbear, etc. 3: from visited
@@ -24,9 +24,9 @@ user_pref("browser.storageManager.enabled",true);
 user_pref("dom.storageManager.enabled",true);
 user_pref("dom.caches.enabled",false);
 // * dom.storage for evercookies, zombie cookies... any JavaScript code on your or any page (XSS) can access local storage, it has no data protection
-// user_pref("dom.storage.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail shall not work and new reddit and imgur and some sites may not work properly
-// user_pref("dom.indexedDB.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail and new reddit and imgur and some sites shall not work
-// user_pref("dom.workers.enabled",false); // Tutanota shall not work
+// user_pref("dom.storage.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail may not work and new reddit and imgur and some sites may not work properly
+// user_pref("dom.indexedDB.enabled",false); // uBlock and ScriptSafe extensions and app.standardnotes.org and protonmail and new reddit and imgur and some sites may not work
+// user_pref("dom.workers.enabled",false); // Tutanota may not work
 // user_pref("dom.serviceWorkers.enabled",false);
 user_pref("browser.search.suggest.enabled",false);
 user_pref("geo.enabled",false);
@@ -117,9 +117,9 @@ user_pref("security.pki.sha1_enforcement_level",1); // disable shattered sha1
 // user_pref("security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256",false);
 // user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha",false);
 // user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha",false);
-// user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false); // if false, dynadot shall not work
+// user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false); // if false, dynadot may not work
 // user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
-// user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz shall not work
+// user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz may not work
 // user_pref("security.ssl3.rsa_aes_256_sha",false);
 // user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",false);
 user_pref("security.ssl3.rsa_des_ede3_sha",false);
