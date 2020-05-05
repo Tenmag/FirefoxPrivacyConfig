@@ -130,13 +130,14 @@ user_pref("privacy.usercontext.about_newtab_segregation.enabled",true);
 user_pref("privacy.userContext.longPressBehavior",2);
 // for Firefox 60 DNS over HTTPS:
 user_pref("network.trr.mode",2); // 2: DNS over HTTPS first with fallback, 3: DoH TRR only. Mode 2 often doesn't work with all requests and leaks DNS
-user_pref("network.trr.resolvers", "[{ \"name\": \"SecureDNSeu\", \"url\": \"https://doh.securedns.eu/dns-query\" },{ \"name\": \"NextDNS\", \"url\": \"https://trr.dns.nextdns.io/\" }]");
-user_pref("network.trr.uri","https://doh.securedns.eu/dns-query"); // web: https://securedns.eu
-// user_pref("network.trr.uri","https://ads-doh.securedns.eu/dns-query"); // adblocker. web: https://securedns.eu
-user_pref("network.trr.bootstrapAddress","146.185.167.43"); // web: https://securedns.eu
+user_pref("network.trr.resolvers", "[{ \"name\": \"NextDNS\", \"url\": \"https://trr.dns.nextdns.io/\" },{ \"name\": \"SecureDNSeu\", \"url\": \"https://doh.securedns.eu/dns-query\" }]");
+user_pref("network.trr.uri","https://trr.dns.nextdns.io/");
 // user_pref("network.trr.uri","https://dns.digitale-gesellschaft.ch/dns-query"); // web: https://www.digitale-gesellschaft.ch/dns/
 // user_pref("network.trr.bootstrapAddress","185.95.218.42"); // web: https://www.digitale-gesellschaft.ch/dns/
 // user_pref("network.trr.uri","https://doh.appliedprivacy.net/query"); // web: https://appliedprivacy.net/services/dns/
+// user_pref("network.trr.uri","https://doh.securedns.eu/dns-query"); // web: https://securedns.eu SecureDNS has been shutdown since the 30th of April 2020
+// user_pref("network.trr.uri","https://ads-doh.securedns.eu/dns-query"); // adblocker. web: https://securedns.eu SecureDNS has been shutdown since the 30th of April 2020
+// user_pref("network.trr.bootstrapAddress","146.185.167.43"); // web: https://securedns.eu SecureDNS has been shutdown since the 30th of April 2020
 // for Firefox 65:
 user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
 //
