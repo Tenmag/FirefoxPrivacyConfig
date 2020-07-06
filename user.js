@@ -90,6 +90,8 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites",false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets",false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights",false);
+user_pref("browser.newtabpage.activity-stream.feeds.system.topsites",false);
+user_pref("browser.urlbar.suggest.topsites",false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled",false);
 user_pref("security.tls.version.max",4);
 user_pref("security.tls.unrestricted_rc4_fallback",false);
