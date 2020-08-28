@@ -112,7 +112,7 @@ user_pref("network.captive-portal-service.enabled",false);
 user_pref("browser.sessionstore.privacy_level",2); // clear ssl form session
 user_pref("security.ask_for_password",2); // ask for master password every n minutes
 user_pref("security.password_lifetime",1); // n=1 minute
-user_pref("security.cert_pinning.enforcement_level",2); // public key pinning always
+user_pref("security.cert_pinning.enforcement_level",2); // public key pinning. 0: Disabled, 1: Allow User MITM (pinning not enforced if the trust anchor is a user inserted CA, default). 2: Always enforced. 3: Enforce test mode.
 user_pref("security.pki.sha1_enforcement_level",1); // disable shattered sha1
 // user_pref("security.ssl3.dhe_rsa_aes_128_sha",false);
 // user_pref("security.ssl3.dhe_rsa_aes_256_sha",false);
@@ -189,6 +189,6 @@ user_pref("accessibility.force_disabled", 1);
 user_pref("network.proxy.type",0);
 // user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3835.0 Safari/537.36");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:80.0) Gecko/20100101 Firefox/80.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.3835.0 Safari/537.36");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:80.0) Gecko/20100101 Firefox/80.0");
