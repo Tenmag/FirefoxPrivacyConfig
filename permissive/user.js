@@ -162,7 +162,7 @@ user_pref("social.shareDirectory","");
 user_pref("social.toast-notifications.enabled",false);
 user_pref("social.whitelist","");
 user_pref("browser.tabs.closeWindowWithLastTab",false); // cookie deletion addons can deal with last closed tab
-user_pref("extensions.allowPrivateBrowsingByDefault",true); // FF65
+// user_pref("extensions.allowPrivateBrowsingByDefault",true); // FF65 / facebook-container problem after 2.0.3
 user_pref("media.autoplay.enabled",false);
 // checking of extensions and telemetry of update
 user_pref("app.update.auto", false);
@@ -191,5 +191,5 @@ user_pref("network.proxy.type",0);
 // user_pref("browser.autofocus",false); // big-tech-co aggressive hack to manipulate user into something
 
 // user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.3835.0 Safari/537.36");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36");
 // user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0");
