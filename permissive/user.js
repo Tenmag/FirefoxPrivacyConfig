@@ -144,6 +144,11 @@ user_pref("network.trr.uri","https://trr.dns.nextdns.io/");
 // user_pref("network.trr.bootstrapAddress","146.185.167.43"); // web: https://securedns.eu SecureDNS has been shutdown since the 30th of April 2020
 // for Firefox 65:
 user_pref("network.security.esni.enabled",true); // FF65 Encrypted SNI
+user_pref("network.dns.echconfig.enabled",true); // FF85 ESNI Encrypted Client Hello
+user_pref("network.dns.use_https_rr_as_altsvc",true); // FF85 ESNI Encrypted Client Hello
+// user_pref("dom.security.https_only_mode",true);
+// user_pref("dom.security.https_only_mode_ever_enabled",true);
+// user_pref("dom.security.https_only_mode_ever_enabled_pbm",true);
 //
 user_pref("browser.link.open_newwindow.restriction",0); // Divert all links according to browser.link.open_newwindow.
 user_pref("browser.link.open_newwindow",3); // Default 3: same window new tab.
@@ -190,6 +195,6 @@ user_pref("network.proxy.type",0);
 // user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 // user_pref("browser.autofocus",false); // big-tech-co aggressive hack to manipulate user into something
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36");
-// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/85.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324 Safari/537.36");
+// user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0");
