@@ -96,7 +96,7 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled",false);
 user_pref("security.tls.version.max",4);
 user_pref("security.tls.unrestricted_rc4_fallback",false);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken",true);
-user_pref("dom.enable_performance",false); // linkedin and instagram fail if false
+user_pref("dom.enable_performance",false); // linkedin and instagram and aliexpress fail if false
 // user_pref("privacy.resistFingerprinting",true); // if true, real navigator.oscpu is revealed, the only benefit is obfuscating clock skew fingerprint
 user_pref("offline-apps.allow_by_default",false); // ask to store data offline
 user_pref("dom.mozTCPSocket.enabled",false);
