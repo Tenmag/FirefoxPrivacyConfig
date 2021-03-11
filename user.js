@@ -123,6 +123,8 @@ user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha",false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha",false);
 // user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256",false); // if false, dynadot may not work
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha",false);
+user_pref("security.ssl3.rsa_aes_128_gcm_sha256",false);
+user_pref("security.ssl3.rsa_aes_256_gcm_sha384",true);
 user_pref("security.ssl3.rsa_aes_128_sha",false); // if false, mega.nz may not work
 user_pref("security.ssl3.rsa_aes_256_sha",false);
 user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",false);
@@ -195,6 +197,8 @@ user_pref("network.proxy.type",0);
 user_pref("browser.display.use_document_fonts",0); // websites must use/list default fonts only
 user_pref("browser.autofocus",false); // big-tech-co aggressive hack to manipulate user into something
 
-// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/85.0");
+// user_pref("general.useragent.override","Mozilla/5.0 (X11; Linux x86_64; rv:86.0) Gecko/20100101 Firefox/86.0");
 // user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324 Safari/537.36");
-user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:85.0) Gecko/20100101 Firefox/85.0");
+user_pref("general.useragent.override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0");
+// user_pref("network.http.useragent.global_override","Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0"); // Basilisk/PaleMoon browser
+
